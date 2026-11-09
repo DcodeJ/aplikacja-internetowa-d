@@ -1,5 +1,5 @@
 class DomainError(Exception):
-    def __unit__(self, message, field="form"):
+    def __init__(self, message, field="form"):
         super().__init__(message)
         self.field = field
 
